@@ -76,10 +76,10 @@
 
         number {
             bindings = <
-&kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS        &kp ASTERISK                      &kp N7        &kp N8        &kp N9        &trans  &kp KP_NUMLOCK
-&kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS         &kp SLASH     &trans      &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &kp CAPSLOCK
-&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_0  &kp PERIOD    &trans      &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0  &trans
-&trans           &trans           &trans           &trans           &trans        &trans      &trans  &trans                                            &trans
+&kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS        &kp SLASH                       &kp N7        &kp N8        &kp N9        &trans  &kp KP_NUMLOCK
+&kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS         &kp ASTRK   &trans      &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &kp CAPSLOCK
+&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_0  &kp PERIOD  &trans      &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0  &trans
+&trans           &trans           &trans           &trans           &trans      &trans      &trans  &trans                                            &trans
             >;
         };
 
@@ -99,15 +99,13 @@
 &trans     &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)  &trans      &trans  &trans                    &kp LG(LA(LEFT_ARROW))  &kp LG(LA(DOWN_ARROW))  &kp LG(LA(RIGHT_ARROW))  &kp LA(LG(L))
 &trans     &trans     &trans     &trans     &trans     &trans      &trans  &trans                                                                                             &kp LC(UP_ARROW)
             >;
-
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans         &trans  &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans         &trans  &mkp MB3  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans         &to 5   &mkp MB1  &mkp MB2  &kp ENTER
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans         &mo 5   &mkp MB1  &mkp MB2  &kp ENTER
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp BACKSPACE                              &trans
             >;
         };
