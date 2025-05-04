@@ -94,10 +94,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&kp LG(Q)  &kp LG(W)  &trans     &trans     &kp LG(T)                      &kp LC(LS(LG(NUMBER_4)))  &trans                &trans              &trans                 &trans
+&kp LG(A)  &kp LG(S)  &trans     &trans     &trans     &trans      &trans  &trans                    &kp LG(LEFT_BRACKET)  &kp LG(UP_ARROW)    &kp LG(RIGHT_BRACKET)  &trans
+&trans     &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)  &trans      &trans  &trans                    &kp LG(LEFT_ARROW)    &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)    &kp LA(LG(L))
+&trans     &trans     &trans     &trans     &trans     &trans      &trans  &trans                                                                                     &kp LC(UP_ARROW)
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -105,10 +105,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &mkp MB1  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
+&trans  &trans  &trans  &trans  &trans                      &trans         &trans  &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans         &trans  &mkp MB3  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans         &trans  &mkp MB1  &mkp MB2  &kp ENTER
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp BACKSPACE                              &trans
             >;
         };
 
