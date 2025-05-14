@@ -62,7 +62,7 @@
             tapping-term-ms = <100>;
         };
     };
-    &zip_temp_layer MOUSE 1500;
+    &zip_temp_layer MOUSE 500;
     
     keymap {
         compatible = "zmk,keymap";
