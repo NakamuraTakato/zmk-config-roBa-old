@@ -9,6 +9,7 @@
 
 &mt {
     flavor = "balanced";
+    tapping-term-ms = <100>;
     quick-tap-ms = <0>;
 };
 
@@ -58,10 +59,11 @@
             bindings = <&mo>, <&to_layer_0>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
         };
     };
-
+    &zip_temp_layer MOUSE 1500;
+    
     keymap {
         compatible = "zmk,keymap";
 
