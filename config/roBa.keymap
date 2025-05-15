@@ -68,10 +68,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W       &kp E      &kp R                 &kp T                                                   &kp Y          &kp U  &lt 5 I   &kp O     &kp P
-&kp A             &kp S       &kp D      &kp F                 &kp G        &kp LS(LG(S))               &kp MINUS      &kp H          &kp J  &kp K     &kp L     &kp MINUS
-&mt LEFT_SHIFT Z  &kp X       &kp C      &kp V                 &kp B        &kp COLON                   &kp SEMICOLON  &kp N          &kp M  &mkp MB1  &mkp MB2  &mt RIGHT_SHIFT ENTER
-&mt LCTRL TAB     &kp PERIOD  &kp COMMA  &lt_to_layer_0 1 TAB  &lt 2 SPACE  &mt LEFT_COMMAND LANG1      &lt 3 LANG2    &kp BACKSPACE                             &lt 6 ESC
+&kp Q             &kp W       &kp E      &kp R                 &kp T                                                 &kp Y          &kp U  &kp I     &kp O     &kp P
+&kp A             &kp S       &kp D      &kp F                 &kp G        &trans                      &trans       &kp H          &kp J  &kp K     &kp L     &kp MINUS
+&mt LEFT_SHIFT Z  &kp X       &kp C      &kp V                 &kp B        &trans                      &trans       &kp N          &kp M  &mkp MB1  &mkp MB2  &mt RIGHT_SHIFT ENTER
+&mt LCTRL TAB     &kp PERIOD  &kp COMMA  &lt_to_layer_0 1 TAB  &lt 2 SPACE  &mt LEFT_COMMAND LANG2      &lt 3 LANG1  &kp BACKSPACE                             &lt 6 ESC
             >;
         };
 
@@ -96,7 +96,7 @@
         ARROW {
             bindings = <
 &kp LG(Q)  &kp LG(W)  &trans     &trans     &kp LG(T)                      &kp LC(LS(LG(NUMBER_4)))  &trans                  &trans                  &trans                   &kp C_VOL_UP
-&kp LG(A)  &kp LG(S)  &trans     &trans     &trans     &trans      &trans  &trans                    &kp LG(LEFT_BRACKET)    &kp LG(LA(UP_ARROW))    &kp LG(RIGHT_BRACKET)    &kp C_VOLUME_DOWN
+&kp LG(A)  &kp LG(S)  &trans     &trans     &trans     &trans      &trans  &trans                    &kp LG(LEFT_BRACE)      &kp LG(LA(UP_ARROW))    &kp LG(RIGHT_BRACE)      &kp C_VOLUME_DOWN
 &trans     &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)  &trans      &trans  &trans                    &kp LG(LA(LEFT_ARROW))  &kp LG(LA(DOWN_ARROW))  &kp LG(LA(RIGHT_ARROW))  &kp LA(LG(L))
 &trans     &trans     &trans     &trans     &trans     &trans      &trans  &trans                                                                                             &kp LC(UP_ARROW)
             >;
@@ -124,7 +124,7 @@
             bindings = <
 &kp F7  &kp F8  &kp F9  &trans   &trans                             &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4
 &kp F4  &kp F5  &kp F6  &trans   &trans  &trans      &trans         &trans        &kp HOME        &kp UP_ARROW    &kp END          &bt BT_CLR_ALL
-&trans  &kp F2  &kp F3  &kp F10  &trans  &trans      &bootloader    &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &kp F2  &kp F3  &kp F10  &trans  &trans      &kp LC(LG(A))  &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
 &trans  &trans  &trans  &trans   &trans  &trans      &kp RIGHT_ALT  &kp DELETE                                                     &trans
             >;
         };
