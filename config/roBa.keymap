@@ -96,7 +96,7 @@
         ARROW {
             bindings = <
 &kp LG(Q)  &kp LG(W)  &trans     &trans     &kp LG(T)                      &kp LC(LS(LG(NUMBER_4)))  &trans                  &trans                  &trans                   &kp C_VOL_UP
-&kp LG(A)  &kp LG(S)  &trans     &trans     &trans     &trans      &trans  &trans                    &kp LG(LEFT_BRACE)      &kp LG(LA(UP_ARROW))    &kp LG(RIGHT_BRACE)      &kp C_VOLUME_DOWN
+&kp LG(A)  &kp LG(S)  &trans     &trans     &trans     &trans      &trans  &trans                    &kp LG(LEFT_BRACKET)    &kp LG(LA(UP_ARROW))    &kp LG(LEFT_BRACKET)     &kp C_VOLUME_DOWN
 &trans     &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)  &trans      &trans  &trans                    &kp LG(LA(LEFT_ARROW))  &kp LG(LA(DOWN_ARROW))  &kp LG(LA(RIGHT_ARROW))  &kp LA(LG(L))
 &trans     &trans     &trans     &trans     &trans     &trans      &trans  &trans                                                                                             &kp LC(UP_ARROW)
             >;
