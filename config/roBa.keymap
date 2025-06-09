@@ -50,6 +50,13 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        bt_disc_all: bt_shut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+            label = "BT_SHUT";
+        };
     };
 
     behaviors {
@@ -123,7 +130,7 @@
         FUNCTION {
             bindings = <
 &kp F7  &kp F8  &kp F9  &trans   &trans                             &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4
-&kp F4  &kp F5  &kp F6  &trans   &trans  &trans      &trans         &trans        &kp HOME        &kp UP_ARROW    &kp END          &bt BT_CLR_ALL
+&kp F4  &kp F5  &kp F6  &trans   &trans  &trans      &trans         &bt_disc_all  &kp HOME        &kp UP_ARROW    &kp END          &bt BT_CLR_ALL
 &trans  &kp F2  &kp F3  &kp F10  &trans  &trans      &kp LC(LG(A))  &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
 &trans  &trans  &trans  &trans   &trans  &trans      &kp RIGHT_ALT  &kp DELETE                                                     &trans
             >;
